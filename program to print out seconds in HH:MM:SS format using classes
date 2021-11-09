@@ -1,0 +1,25 @@
+#include<iostream> 
+#include<math.h>
+using namespace std ; 
+ 
+class time 
+ {
+	public: 
+	int seconds , minutes , hours ; 
+	void get(){ 
+	cout << "enter time in seconds  : " << endl ; 
+	cin >> seconds ; 
+	} 
+	void ans(){ 
+	minutes = seconds/60 ; 
+	hours = seconds/3600 ;  
+	cout << " The time in HH:MM:SS format is :  " << hours  << ":"<< minutes <<":"<< seconds << endl ;
+	}
+
+}; 
+int main(){ 
+time obj ; 
+obj.get() ; 
+obj.ans() ; 
+return 0 ;
+}
